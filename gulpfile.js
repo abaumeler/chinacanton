@@ -29,4 +29,4 @@ gulp.task('serve', function(done) {
 // default is the task that is executed with "gulp"
 gulp.task('default', gulp.series('sass', 'serve', function (done) {
     done();
-}));y
+}));
