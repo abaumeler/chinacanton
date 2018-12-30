@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function(){
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'docs/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("src/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
 

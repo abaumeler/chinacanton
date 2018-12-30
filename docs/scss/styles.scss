@@ -1,14 +1,68 @@
 // Variable Overrides
-$body-bg:  #b16139;
-
-$theme-colors: (
-  "primary": #591e0c,
-  "secondary": #eb3700
-);
-
-.jumbotron {
-    background-color: #8b2514 !important;
-}
+$body-bg:  #3F3F3F;
 
 // Bootstrap Sass Files (Includes all of bootstrap)
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+$text-yellow: #DB9926;
+$background-red-light: #8B2717;
+$background-red-dark: #732111;
+$button-green: #9FC217;
+
+$theme-colors: (
+  "primary": $background-red-dark
+);
+
+.navbar-default {
+  background-color: $background-red-dark;
+  border-color: $background-red-dark;
+  border-radius: 5px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: $text-yellow;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $text-yellow;
+}
+
+.jumbotron {
+    background-color: $background-red-light !important;
+}
+
+.lead {
+  color: $text-yellow;
+}
+
+.display-4 {
+  color: $text-yellow;
+}
+
+.btn-primary {
+  @include button-variant($button-green, darken($button-green, 7.5%), darken($button-green, 10%), lighten($button-green,5%), lighten($button-green, 10%), darken($button-green,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($button-green, #222222, lighten($button-green,5%), $button-green);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #353434;
+}
+
