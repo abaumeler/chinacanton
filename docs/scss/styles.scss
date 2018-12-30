@@ -1,32 +1,45 @@
 // Variable Overrides
 $body-bg:  #3F3F3F;
+$theme-colors: (
+  "primary": #8B2717,
+  "secondary": #732111
+);
 
 // Bootstrap Sass Files (Includes all of bootstrap)
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
 $text-yellow: #DB9926;
+$text-yellow-light: rgb(255, 179, 47);
 $background-red-light: #8B2717;
 $background-red-dark: #732111;
 $button-green: #9FC217;
 
-$theme-colors: (
-  "primary": $background-red-dark
-);
 
-.navbar-default {
+
+.navbar-dark {
   background-color: $background-red-dark;
   border-color: $background-red-dark;
   border-radius: 5px;
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
     color: $text-yellow;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-dark .navbar-nav > li > a {
+  color: $text-yellow;
+}
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item:focus .nav-link,
+.navbar-dark .nav-item:hover .nav-link {
+  color: $text-yellow-light;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: $text-yellow;
 }
 
@@ -39,6 +52,18 @@ $theme-colors: (
 }
 
 .display-4 {
+  color: $text-yellow;
+}
+
+.card-title {
+  color: $text-yellow;
+}
+
+.card-text {
+  color: $text-yellow;
+}
+
+.card-link {
   color: $text-yellow;
 }
 
