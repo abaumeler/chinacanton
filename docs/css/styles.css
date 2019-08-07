@@ -6937,7 +6937,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-dark .nav-item.active .nav-link,
 .navbar-dark .nav-item:focus .nav-link,
 .navbar-dark .nav-item:hover .nav-link {
-  color: #ffb32f; }
+  color: #facb7b; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #DB9926; }
@@ -6948,7 +6948,16 @@ a.text-dark:hover, a.text-dark:focus {
 .lead {
   color: #DB9926; }
 
+.text-muted {
+  color: #facb7b !important; }
+
+.display-5 {
+  color: #DB9926; }
+
 .display-4 {
+  color: #DB9926; }
+
+.display-3 {
   color: #DB9926; }
 
 .card-title {

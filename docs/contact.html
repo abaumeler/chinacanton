@@ -40,11 +40,15 @@
         </nav>
         <!--Jumbotron-->
         <div class="jumbotron mt-2">
-            <h1 class="display-4">Kontakt</h1>
-            <p class="lead">Hier können sie uns kontaktieren</p>
-
+            <h1 class="display-3">Kontakt</h1>
+            <p class="lead">Kontaktieren Sie uns für Tischreservationen und andere Anliegen per Telefon oder via
+                Kontaktformular</p>
+            <p class="display-4">Telefon</p>
+            <p class="text-muted">0041711/7970639</p>
+            <a class="btn btn-primary btn-md" href="tel:0041711/7970639" role="button">Anrufen</a>
+            <p class="display-4">Kontaktformular</p>
             <!-- We're going to place the form here in the next step -->
-            <form id="contact-form" method="post" action="contact.php" role="form">
+            <form id="contact-form" method="post" action="contact.php" role="form" class="text-muted">
 
                 <div class="messages"></div>
 
@@ -54,7 +58,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control"
+                            <input id="form_email" type="email" name="email" class="form-control text-muted"
                                 placeholder="Bitte geben Sie ihre Email ein *" required="required"
                                 data-error="Valid email is required.">
                             <div class="help-block with-errors"></div>
@@ -65,14 +69,14 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_message">Nachricht *</label>
-                            <textarea id="form_message" name="message" class="form-control"
+                            <textarea id="form_message" name="message" class="form-control text-muted"
                                 placeholder="Bitte geben Sie eine Nachricht ein *" rows="4" required="required"
                                 data-error="Please, leave us a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Nachricht abschicken">
+                        <input type="submit" class="btn btn-primary btn-md" value="Nachricht abschicken">
                     </div>
                 </div>
                 <div class="row">
@@ -81,11 +85,34 @@
                             <strong>*</strong> Diese Felder müssen ausgefüllt werden
                     </div>
                 </div>
+            </form>
         </div>
-
-        </form>
+        <!--Content start-->
+        <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card border-primary mb-4">
+                        <div class="card-body text-center bg-primary">
+                            <h5 class="card-title">Öffnungszeiten</h5>
+                            <p class="card-text text-muted">Täglich von 11:30 bis 14:30 Uhr<br>
+                                und von 17:30 bis 23:00 Uhr<br>
+                                kein Ruhetag</p>
+                            <a href="map.html" class="card-link">Anfahrt</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-12 col-md-6">
+                    <div class="card border-primary mb-4">
+                        <div class="card-body text-center bg-primary">
+                            <h5 class="card-title">Menu</h5>
+                            <p class="card-text text-muted">Hier können Sie die Speisekarte herunterladen</p>
+                            <a href="assets/documents/HauptkarteChinarestaurantCanton.pdf" class="card-link">Hauptkarte</a>
+                            <a href="assets/documents/MitnahmeCanton.pdf" class="card-link">Mitnahme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-
     </div>
     </div>
 

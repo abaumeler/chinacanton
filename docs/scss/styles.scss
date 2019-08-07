@@ -10,7 +10,7 @@ $theme-colors: (
 
 
 $text-yellow: #DB9926;
-$text-yellow-light: rgb(255, 179, 47);
+$text-yellow-light: rgb(250, 203, 123);
 $background-red-light: #8B2717;
 $background-red-dark: #732111;
 $button-green: #9FC217;
@@ -51,7 +51,19 @@ $button-green: #9FC217;
   color: $text-yellow;
 }
 
+.text-muted {
+  color: $text-yellow-light !important;
+}
+
+.display-5 {
+  color: $text-yellow;
+}
+
 .display-4 {
+  color: $text-yellow;
+}
+
+.display-3 {
   color: $text-yellow;
 }
 
